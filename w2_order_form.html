@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>RMIT Store</title>
+    <link rel="icon" type="image/x-icon" href="/rmit-store-assets/assets/images/rmit-favicon.png">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <section class="container">
+            <a href="/Week2/w2_index.html">
+                <img src="/rmit-store-assets/assets/images/rmit-store-logo.png" alt="rmit store logo"
+                    style="width: auto; height: 55px;"> </a>
+        </section>
+
+        <section class="container" style="padding-bottom: 20px;">
+            <a href="https://www.campusstore.rmit.edu.au/collections/clothing"><strong>Clothing</strong></a>
+            &nbsp&nbsp
+            <a href="https://www.campusstore.rmit.edu.au/collections/accessories"><strong>Accessories</strong></a>
+            &nbsp&nbsp
+            <a href="https://www.campusstore.rmit.edu.au/collections/stationery"><strong>Stationery</strong></a>
+            &nbsp&nbsp
+            <a href="https://www.campusstore.rmit.edu.au/collections/course"><strong>Course</strong></a>
+            &nbsp&nbsp
+            <a href="https://www.campusstore.rmit.edu.au/collections/special-collection"><strong>Special
+                    Collection</strong></a>
+            &nbsp&nbsp
+            <a href="https://www.campusstore.rmit.edu.au/collections/sale"><strong>Sale</strong></a>
+            &nbsp&nbsp
+            <a
+                href="https://tomhuynhsg.github.io/COSC2430-Web-Programming-materials/html-2/tutorial/rmit-store/#item-list"><strong>Buy
+                    Now!</strong></a>
+        </section>
+
+        <section class="container">
+            <img src="/rmit-store-assets/assets/images/slider.jpg" style="width: auto; height: 550px;">
+        </section>
+        <div class="container">
+            <h2> Our Products Form</h2>
+        </div>
+    </nav>
+
+    <nav class="container">
+        <main style="width: 400px;">
+            <form action="form-processing" method="post">
+                <fieldset>
+                    <legend>Enter your personal information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <br><br>
+                    <label for="date_of_birth">Date Of Birth:</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Enter your shipping information</legend>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    <br><br>
+                    <label for="city">City:</label>
+                    <select id="city" name="city">
+                        <option>Select a city</option>
+                        <option value="hanoi">Hanoi</option>
+                        <option value="ho_chi_minh"> Ho Chi Minh</option>
+                        <option value="da_nang">Da Nang</option>
+                    </select>
+                    <br><br>
+                    <label for="district">District:</label>
+                    <select id="district" name="district">
+                        <option>Select a district</option>
+                        <option value="ha_dong">Ha Dong</option>
+                        <option value="district_7">District 7</option>
+                        <option value="district_1">district 1</option>
+                    </select>
+                    <br><br>
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" id="postcode" name="postcode" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Purchase Options</legend>
+                    <label for="product_select">Select Product(s):</label>
+                    <select id="product_select" name="product_select" multiple>
+                        <option value="FairtradePocketHoodie">Fairtrade Pocket Hoodie</option>
+                        <option value="FairtradeZipHoodie">Fairtrade Zip Hoodie</option>
+                        <option value="RudbyJergy">Rudby Jergy</option>
+                        <option value="TopazPremiumZipJacket">Topaz Premium Zip Jacket</option>
+                        <option value="RmitFairTradePolo">Rmit Fairtrade Polo</option>
+                        <option value="PortableCharger">Portable Charger</option>
+                        <option value="FaceMask">Face Mask</option>
+                        <option value="HoodieKoala">Hoodie Koala</option>
+                        <option value="GradurationRedbacksPack">Graduration Redbacks Pack</option>
+                    </select>
+                    <br>
+                    <p><strong>Hint: </strong>Use Shift/Ctrl key to select multiple products!</p>
+                </fieldset>
+            </form>
+            <br>
+            <form class="container">
+                <input type="submit" value="Order Now!">
+            </form>
+        </main>
+    </nav>
+    
+    <footer class="container">
+        <h4>&copy Copyright by Quang Huy @ RMIT Vietnam | Made with ❤️</h4>
+    </footer>
+</body>
